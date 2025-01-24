@@ -23,6 +23,8 @@ public class RentalWebService {
         cars.add(new Car("AA11BB", "Ferrari", 100));
         cars.add(new Car("CC22DD", "Tesla", 80));
         cars.add(new Car("EE33FF", "BMW", 90));
+        cars.add(new Car("BD55EE", "Toyota", 290));
+        cars.add(new Car("CD77RR", "Toyota", 860));
     }
 
 
