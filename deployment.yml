@@ -4,7 +4,7 @@ metadata:
   labels:
     app: rentalservice
     version: "1.0"
-  name: rentalservice2
+  name: rentalservice2new
 spec:
   replicas: 2
   selector:
@@ -18,8 +18,8 @@ spec:
         app: rentalservice
     spec:
       containers:
-        - name: rentalservice2
-          image: patriciawelehela/rentalservice:2
+        - name: rentalservice2new
+          image: patriciawelehela/rental:2a
           imagePullPolicy: Always
           ports:
             - containerPort: 8080
@@ -35,7 +35,7 @@ metadata:
   creationTimestamp: null
   labels:
     app: rentalservice
-  name: rentalservice2
+  name: rentalservice2new
 spec:
   ports:
     - port: 80
@@ -89,4 +89,4 @@ spec:
         - destination:
             port:
               number: 80
-            host: rentalservice2.default.svc.cluster.local
+            host: rentalservice2new.default.svc.cluster.local
